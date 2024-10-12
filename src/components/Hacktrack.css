@@ -1,0 +1,103 @@
+.hacktrack-container {
+  display: flex;
+  align-items: flex-start;
+  background-color: #e7eaed8b;
+  padding: 20px;
+  border: 5px solid #000000;
+  border-radius: 50px;
+  background-color: #fff;
+  color: #000;
+}
+
+.left-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.content {
+  flex: 2;
+  text-align: center;
+  padding: 20px;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  margin: 0 10px;
+  width: 50px; /* Adjust size as necessary */
+  height: auto;
+}
+
+.hackathon-title {
+  font-size: 3em;
+  margin: 10px 0;
+}
+
+.hackathon-description {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.rectangle-frame {
+  background-color: #ffffff;
+  border: 4px solid #343a40;
+  padding: 1px;
+  border-radius: 40px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.calendar-image, .qr-image {
+  width: 150px; /* Adjust size as necessary */
+  height: auto;
+}
+
+.quote {
+  margin: 20px 0;
+  font-style: italic;
+}
+
+.hashtag {
+  font-weight: bold;
+  color: #007bff; /* Bootstrap primary color */
+}
+
+.hacktrack-container {
+  display: flex;
+  position: relative; /* This allows absolute positioning of inner elements */
+}
+
+.button-container {
+  position: absolute; /* Allows the button to be positioned relative to the parent */
+  bottom: 20px; /* Distance from the bottom of the container */
+  right: 20px; /* Distance from the right of the container */
+}
+
+.register-button {
+  background-color: #ff4757; /* A vibrant color for the button */
+  color: white; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px; /* Padding for the button */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Cursor change on hover */
+  transition: background-color 0.3s ease; /* Smooth background color change */
+}
+
+.register-button:hover {
+  background-color: #e84118; /* Darker red on hover */
+}
+

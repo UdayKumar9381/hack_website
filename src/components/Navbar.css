@@ -1,0 +1,161 @@
+/* Navbar container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #b969fa;
+  color: rgb(7, 0, 0);
+  border: 2px solid #000000;
+  border-radius: 5px;
+  background-color: #7657f0b1;
+  color: #000;
+}
+
+/* Navbar left - logo and links */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo */
+.logo h2 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; /* Use a modern font */
+  font-size: 1.5rem; /* Increase size for visibility */
+  font-weight: bold;
+  color: #ec64e7; /* Base color for the logo */
+  background: linear-gradient(45deg, #5704fd, #5704fd); /* Gradient effect */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Text gradient */
+  text-transform: uppercase; /* Make the text uppercase */
+  letter-spacing: 2.0px; /* Add some spacing between letters */
+  position: relative;
+  display: inline-block;
+  animation: pulse 1s infinite; /* Simple animation */
+}
+
+/* Add a shadow and glow effect */
+.logo h2::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  z-index: -1;
+  filter: blur(10px);
+  background-color: rgb(235, 240, 235); /* Soft glowing effect */
+  opacity: 0.6;
+  transition: all 0.7s ease-in-out;
+}
+
+/* Animation effect for the text */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Navbar links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin-left: 65px;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  margin-left: 20px;
+  cursor: pointer;
+  border: 1.5px solid #000000; /* Add border around dropdown items */
+  padding: 5px 10px; /* Padding inside the border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #c07ef3d6; /* Match background with navbar */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.dropdown:hover {
+  background-color: #9b5de5; /* Slightly change the color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow on hover */
+}
+
+/* Dropdown content hidden by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f3e7fd;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  border: 2px solid #b47ecf; /* Border around dropdown content */
+  border-radius: 5px; /* Rounded corners */
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+}
+
+/* Dropdown items style */
+.dropdown-content a {
+  display: block;
+  padding: 10px 20px;
+  color: rgb(3, 3, 3);
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-content a:hover {
+  background-color: #8cedf0;
+}
+
+/* Search bar */
+.search-bar {
+  padding: 5px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Login/Signup buttons */
+.login-btn, .signup-btn {
+  padding: 8px 16px;
+  margin-left: 10px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover, .signup-btn:hover {
+  background-color: #f6626274;
+}
+
+/* Dropdown rectangle button */
+.dropdown::after {
+  content: '▾'; /* Triangle icon for dropdown */
+  margin-left: 5px;
+}
+
+/* Add a border when dropdown is clicked */
+.dropdown.clicked::after {
+  content: '◼'; /* Square/rectangle icon for clicked state */
+}
