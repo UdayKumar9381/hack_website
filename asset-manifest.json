@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/hack_website/static/css/main.574f3ece.css",
+    "main.js": "/hack_website/static/js/main.65be8f21.js",
+    "index.html": "/hack_website/index.html",
+    "main.574f3ece.css.map": "/hack_website/static/css/main.574f3ece.css.map",
+    "main.65be8f21.js.map": "/hack_website/static/js/main.65be8f21.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.574f3ece.css",
+    "static/js/main.65be8f21.js"
+  ]
+}
